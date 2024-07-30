@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+#root {
+  min-height: 100dvh;
+}
+@layer base {
+  :root {
+    /* text and background */
+    --color-bg: 249 252 250;
+    --color-text: 2 18 10;
+    /* primary light colors */
+    --color-primary-light: 242 252 253;
+    --color-primary-light-hover: 235 250 252;
+    --color-primary-light-active: 214 244 249;
+    --color-primary-normal: 123 220 236;
+    --color-primary-normal-hover: 111 198 212;
+    --color-primary-normal-active: 98 176 189;
+    --color-primary-dark: 92 165 177;
+    --color-primary-dark-hover: 74 132 142;
+    --color-primary-dark-active: 55 99 106;
+    --color-primary-darker: 43 77 83;
+    /* secondary light colors */
+    --color-secondary-light: 235 252 243;
+    --color-secondary-light-hover: 225 251 237;
+    --color-secondary-light-active: 192 246 217;
+    --color-secondary-normal: 52 226 134;
+    --color-secondary-normal-hover: 47 203 121;
+    --color-secondary-normal-active: 42 181 107;
+    --color-secondary-dark: 39 170 101;
+    --color-secondary-dark-hover: 31 136 80;
+    --color-secondary-dark-active: 23 102 60;
+    --color-secondary-darker: 18 79 47;
+    /* accent light colors */
+    --color-accent-light: 235 252 243;
+    --color-accent-light-hover: 225 251 237;
+    --color-accent-light-active: 192 246 217;
+    --color-accent-normal: 52 226 134;
+    --color-accent-normal-hover: 47 203 121;
+    --color-accent-normal-active: 42 181 107;
+    --color-accent-dark: 39 170 101;
+    --color-accent-dark-hover: 31 136 80;
+    --color-accent-dark-active: 23 102 60;
+    --color-accent-darker: 18 79 47;
+  }
+
+  /* dark color theme */
+  @media (prefers-color-scheme: dark) {
+    .dark {
+      /* text and background */
+      --color-bg: 2 18 11;
+      --color-text: 249 252 250;
+      /* primary light colors */
+      --color-primary-light: 231 241 243;
+      --color-primary-light-hover: 220 235 237;
+      --color-primary-light-active: 182 213 217;
+      --color-primary-normal: 19 119 134;
+      --color-primary-normal-hover: 17 107 121;
+      --color-primary-normal-active: 15 95 107;
+      --color-primary-dark: 14 89 101;
+      --color-primary-dark-hover: 11 71 80;
+      --color-primary-dark-active: 9 54 60;
+      --color-primary-darker: 7 42 47;
+      /* secondary light colors */
+      --color-secondary-light: 232 250 240;
+      --color-secondary-light-hover: 221 247 233;
+      --color-secondary-light-active: 185 238 210;
+      --color-secondary-normal: 29 201 109;
+      --color-secondary-normal-hover: 26 181 98;
+      --color-secondary-normal-active: 23 161 87;
+      --color-secondary-dark: 22 151 82;
+      --color-secondary-dark-hover: 17 121 65;
+      --color-secondary-dark-active: 13 90 49;
+      --color-secondary-darker: 10 70 38;
+      /* accent light colors */
+      --color-accent-light: 236 250 243;
+      --color-accent-light-hover: 226 248 236;
+      --color-accent-light-active: 195 240 216;
+      --color-accent-normal: 63 207 130;
+      --color-accent-normal-hover: 57 186 117;
+      --color-accent-normal-active: 50 166 104;
+      --color-accent-dark: 47 155 98;
+      --color-accent-dark-hover: 38 124 78;
+      --color-accent-dark-active: 28 93 58;
+      --color-accent-darker: 22 72 46;
+    }
+  }
+}
+
+.custom-box-shadow {
+  box-shadow: 4px 2px 20px 0px #5CA5B1;
+}
+
+.welcome-shadow {
+  box-shadow: 0px 4px 4px 0px rgba(31, 136, 80, 0.35);
+}
+
+
