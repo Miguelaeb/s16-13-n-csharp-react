@@ -1,6 +1,6 @@
 import { IoMdClose } from "react-icons/io";
 import { Outlet, useNavigate } from "react-router";
-import MedicalForm from "../../components/forms/MedicalForm";
+
 export default function Modal() {
   const navigate = useNavigate();
 
