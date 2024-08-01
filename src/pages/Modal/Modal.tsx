@@ -5,14 +5,13 @@ export default function Modal() {
   const navigate = useNavigate();
 
   return (
-    <section className="flex items-center justify-center min-h-screen bg-no-repeat bg-cover bg-[#F9FCFA]">
+    
+    <section className="flex w-full items-center justify-center h-screen bg-no-repeat bg-cover bg-[#F9FCFA]">
+      <img className="absolute min-h-full" src="/paws.png"/>
       <div className="relative w-full max-w-[480px] p-[48px] bg-[#F9FCFA] rounded-[25px] custom-box-shadow">
         <button className="absolute right-[48px]" onClick={() => navigate(-1)}>
           <IoMdClose size={20} />
         </button>
-        {/* <h2 className="font-Poppins mb-[83px] text-[40px] font-semibold leading-[48px] text-[#37636A] text-center">
-          Inicia Sesión
-        </h2> */}
         <div className="mt-10">
           <Outlet />
         </div>

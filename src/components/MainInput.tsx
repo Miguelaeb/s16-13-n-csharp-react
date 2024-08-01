@@ -1,7 +1,10 @@
 interface InputFieldProps {
   type?: string;
-  label: string;
+  label?: string;
+  style?: string;
   required?: boolean;
+  name?: string;
+  value?: string | any;
   data: (value: any) => void;
   options?: {};
 }
@@ -10,6 +13,9 @@ export const MainInput: React.FC<InputFieldProps> = ({
   type = "",
   label,
   required = false,
+  name = "",
+  value = "",
+  style = "font-Quicksand w-full px-3 py-3 border rounded-[10px] focus:outline-none border-[#62B0BD]",
   data,
   options = {},
 }) => (
@@ -20,9 +26,11 @@ export const MainInput: React.FC<InputFieldProps> = ({
     </label>
     <input
       type={type}
-      className="font-Quicksand w-full px-3 py-3 border rounded-[10px] focus:outline-none border-[#62B0BD]"
+      className={style}
       aria-label={label}
       required={required}
+      name={name}
+      value={value}
       onChange={(e) => data(e)}
       {...options}
     />
